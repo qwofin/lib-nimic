@@ -1,0 +1,551 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`newznab api caps 1`] = `
+"<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<caps>
+  <server version="1.0" title="lib-nimic"/>
+  <limits max="1000" default="1000"/>
+  <registration available="no"/>
+  <searching>
+    <search available="yes"/>
+  </searching>
+  <categories>
+    <category id="7000" name="Books">
+      <subcat id="7010" name="Books/Mags"/>
+      <subcat id="7020" name="Books/EBook"/>
+      <subcat id="7030" name="Books/Comics"/>
+      <subcat id="7040" name="Books/Technical"/>
+      <subcat id="7050" name="Books/Other"/>
+      <subcat id="7060" name="Books/Foreign"/>
+    </category>
+  </categories>
+</caps>"
+`;
+
+exports[`newznab api libgen/search with query 1`] = `
+"<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="1.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:newznab="http://www.newznab.com/DTD/2010/feeds/attributes/">
+  <channel>
+    <title>lib-nimic</title>
+    <item>
+      <title>แมรี่ เชลลีย์ (Mary Shelley) - แฟรงเกนสไตน์ หรือ โพรมีธีอัสยุคใหม่ (Frankenstein; or, The Modern Prometheus) (pdf, Thai, ipfs)</title>
+      <description>แมรี่ เชลลีย์ (Mary Shelley) - แฟรงเกนสไตน์ หรือ โพรมีธีอัสยุคใหม่ (Frankenstein; or, The Modern Prometheus) (pdf, Thai, ipfs)</description>
+      <guid>bafykbzacecklfvibs567ciifbil5qmdubf7obhuqbw7f4njy2gxopcknfcngo</guid>
+      <size>193569904</size>
+      <category>7020</category>
+      <category>10720</category>
+      <pubDate>2022-08-11 08:47:21</pubDate>
+      <newznab:attr name="category" value="107020"/>
+      <newznab:attr name="category" value="7020"/>
+      <newznab:attr name="files" value="1"/>
+      <newznab:attr name="author" value="แมรี่ เชลลีย์ (Mary Shelley)"/>
+      <newznab:attr name="booktitle" value="แฟรงเกนสไตน์ หรือ โพรมีธีอัสยุคใหม่ (Frankenstein; or, The Modern Prometheus)"/>
+      <enclosure url="http://127.0.0.1:3000/api/nzb?sourcetype=libgen&amp;size=193569904&amp;md5=e1f02ce4db6357e829fc3be298329a4c&amp;filename=%E0%B9%81%E0%B8%A1%E0%B8%A3%E0%B8%B5%E0%B9%88+%E0%B9%80%E0%B8%8A%E0%B8%A5%E0%B8%A5%E0%B8%B5%E0%B8%A2%E0%B9%8C+%28Mary+Shelley%29+-+%E0%B9%81%E0%B8%9F%E0%B8%A3%E0%B8%87%E0%B9%80%E0%B8%81%E0%B8%99%E0%B8%AA%E0%B9%84%E0%B8%95%E0%B8%99%E0%B9%8C+%E0%B8%AB%E0%B8%A3%E0%B8%B7%E0%B8%AD+%E0%B9%82%E0%B8%9E%E0%B8%A3%E0%B8%A1%E0%B8%B5%E0%B8%98%E0%B8%B5%E0%B8%AD%E0%B8%B1%E0%B8%AA%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88+%28Frankenstein%3B+or%2C+The+Modern+Prometheus%29.pdf&amp;dlurl=https%3A%2F%2Fgateway.ipfs.io%2Fipfs%2Fbafykbzacecklfvibs567ciifbil5qmdubf7obhuqbw7f4njy2gxopcknfcngo&amp;ipfs=bafykbzacecklfvibs567ciifbil5qmdubf7obhuqbw7f4njy2gxopcknfcngo" length="193569904" type="application/x-nzb"/>
+    </item>
+    <item>
+      <title>แมรี่ เชลลีย์ (Mary Shelley) - แฟรงเกนสไตน์ หรือ โพรมีธีอัสยุคใหม่ (Frankenstein; or, The Modern Prometheus) (pdf, Thai)</title>
+      <description>แมรี่ เชลลีย์ (Mary Shelley) - แฟรงเกนสไตน์ หรือ โพรมีธีอัสยุคใหม่ (Frankenstein; or, The Modern Prometheus) (pdf, Thai)</description>
+      <guid>e1f02ce4db6357e829fc3be298329a4c</guid>
+      <size>193569904</size>
+      <category>7020</category>
+      <category>10720</category>
+      <pubDate>2022-08-11 08:47:21</pubDate>
+      <newznab:attr name="category" value="107020"/>
+      <newznab:attr name="category" value="7020"/>
+      <newznab:attr name="files" value="1"/>
+      <newznab:attr name="author" value="แมรี่ เชลลีย์ (Mary Shelley)"/>
+      <newznab:attr name="booktitle" value="แฟรงเกนสไตน์ หรือ โพรมีธีอัสยุคใหม่ (Frankenstein; or, The Modern Prometheus)"/>
+      <enclosure url="http://127.0.0.1:3000/api/nzb?sourcetype=libgen&amp;size=193569904&amp;md5=e1f02ce4db6357e829fc3be298329a4c&amp;filename=%E0%B9%81%E0%B8%A1%E0%B8%A3%E0%B8%B5%E0%B9%88+%E0%B9%80%E0%B8%8A%E0%B8%A5%E0%B8%A5%E0%B8%B5%E0%B8%A2%E0%B9%8C+%28Mary+Shelley%29+-+%E0%B9%81%E0%B8%9F%E0%B8%A3%E0%B8%87%E0%B9%80%E0%B8%81%E0%B8%99%E0%B8%AA%E0%B9%84%E0%B8%95%E0%B8%99%E0%B9%8C+%E0%B8%AB%E0%B8%A3%E0%B8%B7%E0%B8%AD+%E0%B9%82%E0%B8%9E%E0%B8%A3%E0%B8%A1%E0%B8%B5%E0%B8%98%E0%B8%B5%E0%B8%AD%E0%B8%B1%E0%B8%AA%E0%B8%A2%E0%B8%B8%E0%B8%84%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88+%28Frankenstein%3B+or%2C+The+Modern+Prometheus%29.pdf&amp;dlurl=http%3A%2F%2Fdownload.library.lol%2Fmain%2F3347000%2Fe1f02ce4db6357e829fc3be298329a4c%2Fe1f02ce4db6357e829fc3be298329a4c.pdf" length="193569904" type="application/x-nzb"/>
+    </item>
+    <item>
+      <title>Мэри Шелли [Mary Shelly] - [Иностранный язык: освой читая] - Франкенштейн, или Современный Прометей = Frankenstein: or, the Modern Prometheus: метод комментированного чтения (2012, pdf, Russian, English, ipfs)</title>
+      <description>Мэри Шелли [Mary Shelly] - [Иностранный язык: освой читая] - Франкенштейн, или Современный Прометей = Frankenstein: or, the Modern Prometheus: метод комментированного чтения (2012, pdf, Russian, English, ipfs)</description>
+      <guid>bafykbzacebcuihauqxxczsca2xmck3aqz5knfx6jzx2y4xk34pq3fkk67hx46</guid>
+      <size>10659034</size>
+      <category>7020</category>
+      <category>10720</category>
+      <pubDate>2022-08-28 07:40:56</pubDate>
+      <newznab:attr name="category" value="107020"/>
+      <newznab:attr name="category" value="7020"/>
+      <newznab:attr name="files" value="1"/>
+      <newznab:attr name="author" value="Мэри Шелли [Mary Shelly]"/>
+      <newznab:attr name="booktitle" value="Франкенштейн, или Современный Прометей = Frankenstein: or, the Modern Prometheus: метод комментированного чтения"/>
+      <enclosure url="http://127.0.0.1:3000/api/nzb?sourcetype=libgen&amp;size=10659034&amp;md5=900a200c15f5f3576508db06b55ec731&amp;filename=%D0%9C%D1%8D%D1%80%D0%B8+%D0%A8%D0%B5%D0%BB%D0%BB%D0%B8+%5BMary+Shelly%5D+-+%5B%D0%98%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D0%B9+%D1%8F%D0%B7%D1%8B%D0%BA%3A+%D0%BE%D1%81%D0%B2%D0%BE%D0%B9+%D1%87%D0%B8%D1%82%D0%B0%D1%8F%5D+-+%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D0%B5%D0%BD%D1%88%D1%82%D0%B5%D0%B9%D0%BD%2C+%D0%B8%D0%BB%D0%B8+%D0%A1%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9+%D0%9F%D1%80%D0%BE%D0%BC%D0%B5%D1%82%D0%B5%D0%B9+%3D+Frankenstein%3A+or%2C+the+Modern+Prometheus%3A+%D0%BC%D0%B5%D1%82%D0%BE%D0%B4+%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D0%BD%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE+%D1%87%D1%82%D0%B5%D0%BD%D0%B8%D1%8F.pdf&amp;dlurl=https%3A%2F%2Fgateway.ipfs.io%2Fipfs%2Fbafykbzacebcuihauqxxczsca2xmck3aqz5knfx6jzx2y4xk34pq3fkk67hx46&amp;ipfs=bafykbzacebcuihauqxxczsca2xmck3aqz5knfx6jzx2y4xk34pq3fkk67hx46" length="10659034" type="application/x-nzb"/>
+    </item>
+    <item>
+      <title>Мэри Шелли [Mary Shelly] - [Иностранный язык: освой читая] - Франкенштейн, или Современный Прометей = Frankenstein: or, the Modern Prometheus: метод комментированного чтения (2012, pdf, Russian, English)</title>
+      <description>Мэри Шелли [Mary Shelly] - [Иностранный язык: освой читая] - Франкенштейн, или Современный Прометей = Frankenstein: or, the Modern Prometheus: метод комментированного чтения (2012, pdf, Russian, English)</description>
+      <guid>900a200c15f5f3576508db06b55ec731</guid>
+      <size>10659034</size>
+      <category>7020</category>
+      <category>10720</category>
+      <pubDate>2022-08-28 07:40:56</pubDate>
+      <newznab:attr name="category" value="107020"/>
+      <newznab:attr name="category" value="7020"/>
+      <newznab:attr name="files" value="1"/>
+      <newznab:attr name="author" value="Мэри Шелли [Mary Shelly]"/>
+      <newznab:attr name="booktitle" value="Франкенштейн, или Современный Прометей = Frankenstein: or, the Modern Prometheus: метод комментированного чтения"/>
+      <enclosure url="http://127.0.0.1:3000/api/nzb?sourcetype=libgen&amp;size=10659034&amp;md5=900a200c15f5f3576508db06b55ec731&amp;filename=%D0%9C%D1%8D%D1%80%D0%B8+%D0%A8%D0%B5%D0%BB%D0%BB%D0%B8+%5BMary+Shelly%5D+-+%5B%D0%98%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D0%B9+%D1%8F%D0%B7%D1%8B%D0%BA%3A+%D0%BE%D1%81%D0%B2%D0%BE%D0%B9+%D1%87%D0%B8%D1%82%D0%B0%D1%8F%5D+-+%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D0%B5%D0%BD%D1%88%D1%82%D0%B5%D0%B9%D0%BD%2C+%D0%B8%D0%BB%D0%B8+%D0%A1%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9+%D0%9F%D1%80%D0%BE%D0%BC%D0%B5%D1%82%D0%B5%D0%B9+%3D+Frankenstein%3A+or%2C+the+Modern+Prometheus%3A+%D0%BC%D0%B5%D1%82%D0%BE%D0%B4+%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D0%BD%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE+%D1%87%D1%82%D0%B5%D0%BD%D0%B8%D1%8F.pdf&amp;dlurl=http%3A%2F%2Fdownload.library.lol%2Fmain%2F3362000%2F900a200c15f5f3576508db06b55ec731%2F900a200c15f5f3576508db06b55ec731.pdf" length="10659034" type="application/x-nzb"/>
+    </item>
+  </channel>
+</rss>"
+`;
+
+exports[`newznab api libgenplus/search with query 1`] = `
+"<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="1.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:newznab="http://www.newznab.com/DTD/2010/feeds/attributes/">
+  <channel>
+    <title>lib-nimic</title>
+    <item>
+      <title> -  (2014, cbr, eng)</title>
+      <description> -  (2014, cbr, eng)</description>
+      <guid>27262c93f8f05f750bdefd2458c03dc5</guid>
+      <size>52569011</size>
+      <category>7020</category>
+      <category>10720</category>
+      <pubDate>2022-11-04 14:59:57</pubDate>
+      <newznab:attr name="category" value="107020"/>
+      <newznab:attr name="category" value="7020"/>
+      <newznab:attr name="files" value="1"/>
+      <newznab:attr name="author" value=""/>
+      <newznab:attr name="booktitle" value=""/>
+      <enclosure url="http://127.0.0.1:3000/api/nzb?sourcetype=libgenplus&amp;size=52569011&amp;md5=27262c93f8f05f750bdefd2458c03dc5&amp;filename=+-+.cbr&amp;dlurl=https%3A%2F%2Flibgen.li%2Fads27262c93f8f05f750bdefd2458c03dc5" length="52569011" type="application/x-nzb"/>
+    </item>
+    <item>
+      <title> -  (2014, cbr, eng)</title>
+      <description> -  (2014, cbr, eng)</description>
+      <guid>634d68a6ad0ea0525c14133e45e491e2</guid>
+      <size>49270807</size>
+      <category>7020</category>
+      <category>10720</category>
+      <pubDate>2022-11-04 14:59:57</pubDate>
+      <newznab:attr name="category" value="107020"/>
+      <newznab:attr name="category" value="7020"/>
+      <newznab:attr name="files" value="1"/>
+      <newznab:attr name="author" value=""/>
+      <newznab:attr name="booktitle" value=""/>
+      <enclosure url="http://127.0.0.1:3000/api/nzb?sourcetype=libgenplus&amp;size=49270807&amp;md5=634d68a6ad0ea0525c14133e45e491e2&amp;filename=+-+.cbr&amp;dlurl=https%3A%2F%2Flibgen.li%2Fads634d68a6ad0ea0525c14133e45e491e2" length="49270807" type="application/x-nzb"/>
+    </item>
+    <item>
+      <title> -  (2014, cbr, eng)</title>
+      <description> -  (2014, cbr, eng)</description>
+      <guid>3c5b654bb643e4374b268aae1087f9e2</guid>
+      <size>101785796</size>
+      <category>7020</category>
+      <category>10720</category>
+      <pubDate>2022-11-04 14:59:57</pubDate>
+      <newznab:attr name="category" value="107020"/>
+      <newznab:attr name="category" value="7020"/>
+      <newznab:attr name="files" value="1"/>
+      <newznab:attr name="author" value=""/>
+      <newznab:attr name="booktitle" value=""/>
+      <enclosure url="http://127.0.0.1:3000/api/nzb?sourcetype=libgenplus&amp;size=101785796&amp;md5=3c5b654bb643e4374b268aae1087f9e2&amp;filename=+-+.cbr&amp;dlurl=https%3A%2F%2Flibgen.li%2Fads3c5b654bb643e4374b268aae1087f9e2" length="101785796" type="application/x-nzb"/>
+    </item>
+    <item>
+      <title>Шелли Мэри Уолстонкрафт - Frankenstein or the Modern Prometheus (1818, fb2, eng, ipfs)</title>
+      <description>Шелли Мэри Уолстонкрафт - Frankenstein or the Modern Prometheus (1818, fb2, eng, ipfs)</description>
+      <guid>bafykbzacecokxlkr5fabu76fguvd3o4u226yfw4iabnu2i2nlyy7k5c5xyovi</guid>
+      <size>451023</size>
+      <category>7020</category>
+      <category>10720</category>
+      <pubDate>2020-12-24 04:29:09</pubDate>
+      <newznab:attr name="category" value="107020"/>
+      <newznab:attr name="category" value="7020"/>
+      <newznab:attr name="files" value="1"/>
+      <newznab:attr name="author" value="Шелли Мэри Уолстонкрафт"/>
+      <newznab:attr name="booktitle" value="Frankenstein or the Modern Prometheus"/>
+      <enclosure url="http://127.0.0.1:3000/api/nzb?sourcetype=libgenplus&amp;size=451023&amp;md5=ec5bdf62fafc0422506163ad182b83ed&amp;filename=%D0%A8%D0%B5%D0%BB%D0%BB%D0%B8+%D0%9C%D1%8D%D1%80%D0%B8+%D0%A3%D0%BE%D0%BB%D1%81%D1%82%D0%BE%D0%BD%D0%BA%D1%80%D0%B0%D1%84%D1%82+-+Frankenstein+or+the+Modern+Prometheus.fb2&amp;dlurl=https%3A%2F%2Fgateway.ipfs.io%2Fipfs%2Fbafykbzacecokxlkr5fabu76fguvd3o4u226yfw4iabnu2i2nlyy7k5c5xyovi&amp;ipfs=bafykbzacecokxlkr5fabu76fguvd3o4u226yfw4iabnu2i2nlyy7k5c5xyovi" length="451023" type="application/x-nzb"/>
+    </item>
+    <item>
+      <title>Шелли Мэри Уолстонкрафт - Frankenstein or the Modern Prometheus (1818, fb2, eng)</title>
+      <description>Шелли Мэри Уолстонкрафт - Frankenstein or the Modern Prometheus (1818, fb2, eng)</description>
+      <guid>ec5bdf62fafc0422506163ad182b83ed</guid>
+      <size>451023</size>
+      <category>7020</category>
+      <category>10720</category>
+      <pubDate>2020-12-24 04:29:09</pubDate>
+      <newznab:attr name="category" value="107020"/>
+      <newznab:attr name="category" value="7020"/>
+      <newznab:attr name="files" value="1"/>
+      <newznab:attr name="author" value="Шелли Мэри Уолстонкрафт"/>
+      <newznab:attr name="booktitle" value="Frankenstein or the Modern Prometheus"/>
+      <enclosure url="http://127.0.0.1:3000/api/nzb?sourcetype=libgenplus&amp;size=451023&amp;md5=ec5bdf62fafc0422506163ad182b83ed&amp;filename=%D0%A8%D0%B5%D0%BB%D0%BB%D0%B8+%D0%9C%D1%8D%D1%80%D0%B8+%D0%A3%D0%BE%D0%BB%D1%81%D1%82%D0%BE%D0%BD%D0%BA%D1%80%D0%B0%D1%84%D1%82+-+Frankenstein+or+the+Modern+Prometheus.fb2&amp;dlurl=https%3A%2F%2Flibgen.li%2Fadsec5bdf62fafc0422506163ad182b83ed" length="451023" type="application/x-nzb"/>
+    </item>
+    <item>
+      <title>Shelley, Mary Wollstonecraft - Frankenstein, or, The modern Prometheus: the 1818 text (1998, epub, eng, ipfs)</title>
+      <description>Shelley, Mary Wollstonecraft - Frankenstein, or, The modern Prometheus: the 1818 text (1998, epub, eng, ipfs)</description>
+      <guid>bafk2bzacedb6ookbu7ygvjg2n6m2gish5zpmy56p76woc4tuzwub27mcnlgv4</guid>
+      <size>255207</size>
+      <category>7020</category>
+      <category>10720</category>
+      <pubDate>2021-06-20 16:23:32</pubDate>
+      <newznab:attr name="category" value="107020"/>
+      <newznab:attr name="category" value="7020"/>
+      <newznab:attr name="files" value="1"/>
+      <newznab:attr name="author" value="Shelley, Mary Wollstonecraft"/>
+      <newznab:attr name="booktitle" value="Frankenstein, or, The modern Prometheus: the 1818 text"/>
+      <enclosure url="http://127.0.0.1:3000/api/nzb?sourcetype=libgenplus&amp;size=255207&amp;md5=df55a3186d1bfe522cb11501f04b1dc6&amp;filename=Shelley%2C+Mary+Wollstonecraft+-+Frankenstein%2C+or%2C+The+modern+Prometheus%3A+the+1818+text.epub&amp;dlurl=https%3A%2F%2Fgateway.ipfs.io%2Fipfs%2Fbafk2bzacedb6ookbu7ygvjg2n6m2gish5zpmy56p76woc4tuzwub27mcnlgv4&amp;ipfs=bafk2bzacedb6ookbu7ygvjg2n6m2gish5zpmy56p76woc4tuzwub27mcnlgv4" length="255207" type="application/x-nzb"/>
+    </item>
+    <item>
+      <title>Shelley, Mary Wollstonecraft - Frankenstein, or, The modern Prometheus: the 1818 text (1998, epub, eng)</title>
+      <description>Shelley, Mary Wollstonecraft - Frankenstein, or, The modern Prometheus: the 1818 text (1998, epub, eng)</description>
+      <guid>df55a3186d1bfe522cb11501f04b1dc6</guid>
+      <size>255207</size>
+      <category>7020</category>
+      <category>10720</category>
+      <pubDate>2021-06-20 16:23:32</pubDate>
+      <newznab:attr name="category" value="107020"/>
+      <newznab:attr name="category" value="7020"/>
+      <newznab:attr name="files" value="1"/>
+      <newznab:attr name="author" value="Shelley, Mary Wollstonecraft"/>
+      <newznab:attr name="booktitle" value="Frankenstein, or, The modern Prometheus: the 1818 text"/>
+      <enclosure url="http://127.0.0.1:3000/api/nzb?sourcetype=libgenplus&amp;size=255207&amp;md5=df55a3186d1bfe522cb11501f04b1dc6&amp;filename=Shelley%2C+Mary+Wollstonecraft+-+Frankenstein%2C+or%2C+The+modern+Prometheus%3A+the+1818+text.epub&amp;dlurl=https%3A%2F%2Flibgen.li%2Fadsdf55a3186d1bfe522cb11501f04b1dc6" length="255207" type="application/x-nzb"/>
+    </item>
+    <item>
+      <title>Shelley, Mary Wollstonecraft - Frankenstein, or, The modern Prometheus the 1818 text (1998, epub, eng, ipfs)</title>
+      <description>Shelley, Mary Wollstonecraft - Frankenstein, or, The modern Prometheus the 1818 text (1998, epub, eng, ipfs)</description>
+      <guid>bafk2bzacedrvjptjgkylzwji4lgesyaqmwonqm4qrp3q3symylndxy3yfesag</guid>
+      <size>254567</size>
+      <category>7020</category>
+      <category>10720</category>
+      <pubDate>2021-06-20 16:23:32</pubDate>
+      <newznab:attr name="category" value="107020"/>
+      <newznab:attr name="category" value="7020"/>
+      <newznab:attr name="files" value="1"/>
+      <newznab:attr name="author" value="Shelley, Mary Wollstonecraft"/>
+      <newznab:attr name="booktitle" value="Frankenstein, or, The modern Prometheus the 1818 text"/>
+      <enclosure url="http://127.0.0.1:3000/api/nzb?sourcetype=libgenplus&amp;size=254567&amp;md5=5e11a25972c1ebf5fe9cd13d7baf16b7&amp;filename=Shelley%2C+Mary+Wollstonecraft+-+Frankenstein%2C+or%2C+The+modern+Prometheus+the+1818+text.epub&amp;dlurl=https%3A%2F%2Fgateway.ipfs.io%2Fipfs%2Fbafk2bzacedrvjptjgkylzwji4lgesyaqmwonqm4qrp3q3symylndxy3yfesag&amp;ipfs=bafk2bzacedrvjptjgkylzwji4lgesyaqmwonqm4qrp3q3symylndxy3yfesag" length="254567" type="application/x-nzb"/>
+    </item>
+    <item>
+      <title>Shelley, Mary Wollstonecraft - Frankenstein, or, The modern Prometheus the 1818 text (1998, epub, eng)</title>
+      <description>Shelley, Mary Wollstonecraft - Frankenstein, or, The modern Prometheus the 1818 text (1998, epub, eng)</description>
+      <guid>5e11a25972c1ebf5fe9cd13d7baf16b7</guid>
+      <size>254567</size>
+      <category>7020</category>
+      <category>10720</category>
+      <pubDate>2021-06-20 16:23:32</pubDate>
+      <newznab:attr name="category" value="107020"/>
+      <newznab:attr name="category" value="7020"/>
+      <newznab:attr name="files" value="1"/>
+      <newznab:attr name="author" value="Shelley, Mary Wollstonecraft"/>
+      <newznab:attr name="booktitle" value="Frankenstein, or, The modern Prometheus the 1818 text"/>
+      <enclosure url="http://127.0.0.1:3000/api/nzb?sourcetype=libgenplus&amp;size=254567&amp;md5=5e11a25972c1ebf5fe9cd13d7baf16b7&amp;filename=Shelley%2C+Mary+Wollstonecraft+-+Frankenstein%2C+or%2C+The+modern+Prometheus+the+1818+text.epub&amp;dlurl=https%3A%2F%2Flibgen.li%2Fads5e11a25972c1ebf5fe9cd13d7baf16b7" length="254567" type="application/x-nzb"/>
+    </item>
+    <item>
+      <title>Shelley, Mary - Frankenstein or The Modern Prometheus - The 1818 text (1998, epub, eng, ipfs)</title>
+      <description>Shelley, Mary - Frankenstein or The Modern Prometheus - The 1818 text (1998, epub, eng, ipfs)</description>
+      <guid>bafykbzaceca2hfrvnr2x7usdqd5aevgd5ltfld3ran7ylvetj6xb4ba6yapyc</guid>
+      <size>273372</size>
+      <category>7020</category>
+      <category>10720</category>
+      <pubDate>2021-06-20 16:35:15</pubDate>
+      <newznab:attr name="category" value="107020"/>
+      <newznab:attr name="category" value="7020"/>
+      <newznab:attr name="files" value="1"/>
+      <newznab:attr name="author" value="Shelley, Mary"/>
+      <newznab:attr name="booktitle" value="Frankenstein or The Modern Prometheus - The 1818 text"/>
+      <enclosure url="http://127.0.0.1:3000/api/nzb?sourcetype=libgenplus&amp;size=273372&amp;md5=74b60b891baa8f6d12def67a47ae15b1&amp;filename=Shelley%2C+Mary+-+Frankenstein+or+The+Modern+Prometheus+-+The+1818+text.epub&amp;dlurl=https%3A%2F%2Fgateway.ipfs.io%2Fipfs%2Fbafykbzaceca2hfrvnr2x7usdqd5aevgd5ltfld3ran7ylvetj6xb4ba6yapyc&amp;ipfs=bafykbzaceca2hfrvnr2x7usdqd5aevgd5ltfld3ran7ylvetj6xb4ba6yapyc" length="273372" type="application/x-nzb"/>
+    </item>
+    <item>
+      <title>Shelley, Mary - Frankenstein or The Modern Prometheus - The 1818 text (1998, epub, eng)</title>
+      <description>Shelley, Mary - Frankenstein or The Modern Prometheus - The 1818 text (1998, epub, eng)</description>
+      <guid>74b60b891baa8f6d12def67a47ae15b1</guid>
+      <size>273372</size>
+      <category>7020</category>
+      <category>10720</category>
+      <pubDate>2021-06-20 16:35:15</pubDate>
+      <newznab:attr name="category" value="107020"/>
+      <newznab:attr name="category" value="7020"/>
+      <newznab:attr name="files" value="1"/>
+      <newznab:attr name="author" value="Shelley, Mary"/>
+      <newznab:attr name="booktitle" value="Frankenstein or The Modern Prometheus - The 1818 text"/>
+      <enclosure url="http://127.0.0.1:3000/api/nzb?sourcetype=libgenplus&amp;size=273372&amp;md5=74b60b891baa8f6d12def67a47ae15b1&amp;filename=Shelley%2C+Mary+-+Frankenstein+or+The+Modern+Prometheus+-+The+1818+text.epub&amp;dlurl=https%3A%2F%2Flibgen.li%2Fads74b60b891baa8f6d12def67a47ae15b1" length="273372" type="application/x-nzb"/>
+    </item>
+    <item>
+      <title>Shelley, Mary Wollstonecraft - [Vintage Classics] - Frankenstein, or, The modern Prometheus: the original two-volume novel of 1816-1817 from the Bodleian Library manuscripts (2011;2009, epub, eng)</title>
+      <description>Shelley, Mary Wollstonecraft - [Vintage Classics] - Frankenstein, or, The modern Prometheus: the original two-volume novel of 1816-1817 from the Bodleian Library manuscripts (2011;2009, epub, eng)</description>
+      <guid>65f4c902136afd38d2ada86008523232</guid>
+      <size>3145029</size>
+      <category>7020</category>
+      <category>10720</category>
+      <pubDate>2021-06-20 16:35:15</pubDate>
+      <newznab:attr name="category" value="107020"/>
+      <newznab:attr name="category" value="7020"/>
+      <newznab:attr name="files" value="1"/>
+      <newznab:attr name="author" value="Shelley, Mary Wollstonecraft"/>
+      <newznab:attr name="booktitle" value="Frankenstein, or, The modern Prometheus: the original two-volume novel of 1816-1817 from the Bodleian Library manuscripts"/>
+      <enclosure url="http://127.0.0.1:3000/api/nzb?sourcetype=libgenplus&amp;size=3145029&amp;md5=65f4c902136afd38d2ada86008523232&amp;filename=Shelley%2C+Mary+Wollstonecraft+-+%5BVintage+Classics%5D+-+Frankenstein%2C+or%2C+The+modern+Prometheus%3A+the+original+two-volume+novel+of+1816-1817+from+the+Bodleian+Library+manuscripts.epub&amp;dlurl=https%3A%2F%2Flibgen.li%2Fads65f4c902136afd38d2ada86008523232" length="3145029" type="application/x-nzb"/>
+    </item>
+    <item>
+      <title>Shelley, Mary Wollstonecraft - Frankenstein: Or the Modern Prometheus (2016, epub, eng)</title>
+      <description>Shelley, Mary Wollstonecraft - Frankenstein: Or the Modern Prometheus (2016, epub, eng)</description>
+      <guid>ad5b438ce404ef3e8f02ead9b6e073f2</guid>
+      <size>337267</size>
+      <category>7020</category>
+      <category>10720</category>
+      <pubDate>2021-06-20 16:35:15</pubDate>
+      <newznab:attr name="category" value="107020"/>
+      <newznab:attr name="category" value="7020"/>
+      <newznab:attr name="files" value="1"/>
+      <newznab:attr name="author" value="Shelley, Mary Wollstonecraft"/>
+      <newznab:attr name="booktitle" value="Frankenstein: Or the Modern Prometheus"/>
+      <enclosure url="http://127.0.0.1:3000/api/nzb?sourcetype=libgenplus&amp;size=337267&amp;md5=ad5b438ce404ef3e8f02ead9b6e073f2&amp;filename=Shelley%2C+Mary+Wollstonecraft+-+Frankenstein%3A+Or+the+Modern+Prometheus.epub&amp;dlurl=https%3A%2F%2Flibgen.li%2Fadsad5b438ce404ef3e8f02ead9b6e073f2" length="337267" type="application/x-nzb"/>
+    </item>
+    <item>
+      <title>Shelley, Mary Wollstonecraft - Frankenstein, or, The modern Prometheus: the 1818 text (1998, epub, eng)</title>
+      <description>Shelley, Mary Wollstonecraft - Frankenstein, or, The modern Prometheus: the 1818 text (1998, epub, eng)</description>
+      <guid>4c703f3fb0fbb9073b1a55e864bf8faa</guid>
+      <size>255289</size>
+      <category>7020</category>
+      <category>10720</category>
+      <pubDate>2021-06-20 16:35:15</pubDate>
+      <newznab:attr name="category" value="107020"/>
+      <newznab:attr name="category" value="7020"/>
+      <newznab:attr name="files" value="1"/>
+      <newznab:attr name="author" value="Shelley, Mary Wollstonecraft"/>
+      <newznab:attr name="booktitle" value="Frankenstein, or, The modern Prometheus: the 1818 text"/>
+      <enclosure url="http://127.0.0.1:3000/api/nzb?sourcetype=libgenplus&amp;size=255289&amp;md5=4c703f3fb0fbb9073b1a55e864bf8faa&amp;filename=Shelley%2C+Mary+Wollstonecraft+-+Frankenstein%2C+or%2C+The+modern+Prometheus%3A+the+1818+text.epub&amp;dlurl=https%3A%2F%2Flibgen.li%2Fads4c703f3fb0fbb9073b1a55e864bf8faa" length="255289" type="application/x-nzb"/>
+    </item>
+    <item>
+      <title>Shelley, Mary Wollstonecraft - Frankenstein, or, The modern Prometheus: the 1818 text (1998, epub, eng)</title>
+      <description>Shelley, Mary Wollstonecraft - Frankenstein, or, The modern Prometheus: the 1818 text (1998, epub, eng)</description>
+      <guid>0c39947397cc5a2865589634dcc5649b</guid>
+      <size>254854</size>
+      <category>7020</category>
+      <category>10720</category>
+      <pubDate>2021-06-20 16:35:15</pubDate>
+      <newznab:attr name="category" value="107020"/>
+      <newznab:attr name="category" value="7020"/>
+      <newznab:attr name="files" value="1"/>
+      <newznab:attr name="author" value="Shelley, Mary Wollstonecraft"/>
+      <newznab:attr name="booktitle" value="Frankenstein, or, The modern Prometheus: the 1818 text"/>
+      <enclosure url="http://127.0.0.1:3000/api/nzb?sourcetype=libgenplus&amp;size=254854&amp;md5=0c39947397cc5a2865589634dcc5649b&amp;filename=Shelley%2C+Mary+Wollstonecraft+-+Frankenstein%2C+or%2C+The+modern+Prometheus%3A+the+1818+text.epub&amp;dlurl=https%3A%2F%2Flibgen.li%2Fads0c39947397cc5a2865589634dcc5649b" length="254854" type="application/x-nzb"/>
+    </item>
+    <item>
+      <title>Krischel, Matthis; Fangerau, Heiner - 1123 FRANKENSTEIN, OR THE MODERN PROMETHEUS: PROMISE AND FEAR OF ELECTRICITY IN MEDICINE (2010, pdf)</title>
+      <description>Krischel, Matthis; Fangerau, Heiner - 1123 FRANKENSTEIN, OR THE MODERN PROMETHEUS: PROMISE AND FEAR OF ELECTRICITY IN MEDICINE (2010, pdf)</description>
+      <guid>7b81276410704ffe901c5587dad6a996</guid>
+      <size>180049</size>
+      <category>7020</category>
+      <category>10720</category>
+      <pubDate>2021-07-17 14:20:10</pubDate>
+      <newznab:attr name="category" value="107020"/>
+      <newznab:attr name="category" value="7020"/>
+      <newznab:attr name="files" value="1"/>
+      <newznab:attr name="author" value="Krischel, Matthis; Fangerau, Heiner"/>
+      <newznab:attr name="booktitle" value="1123 FRANKENSTEIN, OR THE MODERN PROMETHEUS: PROMISE AND FEAR OF ELECTRICITY IN MEDICINE"/>
+      <enclosure url="http://127.0.0.1:3000/api/nzb?sourcetype=libgenplus&amp;size=180049&amp;md5=7b81276410704ffe901c5587dad6a996&amp;filename=Krischel%2C+Matthis%3B+Fangerau%2C+Heiner+-+1123+FRANKENSTEIN%2C+OR+THE+MODERN+PROMETHEUS%3A+PROMISE+AND+FEAR+OF+ELECTRICITY+IN+MEDICINE.pdf&amp;dlurl=https%3A%2F%2Flibgen.li%2Fads7b81276410704ffe901c5587dad6a996" length="180049" type="application/x-nzb"/>
+    </item>
+    <item>
+      <title>Review by: Susan J. Wolfson - Frankenstein / or / The Modern Prometheus: The Original Two—Volume Novel of 1816–1817 from the Bodleian Library Manuscriptsby Mary Wollstonecraft Shelley; Percy Bysshe Shelley; Charles E. Robinson (2009, pdf)</title>
+      <description>Review by: Susan J. Wolfson - Frankenstein / or / The Modern Prometheus: The Original Two—Volume Novel of 1816–1817 from the Bodleian Library Manuscriptsby Mary Wollstonecraft Shelley; Percy Bysshe Shelley; Charles E. Robinson (2009, pdf)</description>
+      <guid>87e4f647f765028cd8596b3406db649d</guid>
+      <size>483605</size>
+      <category>7020</category>
+      <category>10720</category>
+      <pubDate>2021-07-17 18:01:12</pubDate>
+      <newznab:attr name="category" value="107020"/>
+      <newznab:attr name="category" value="7020"/>
+      <newznab:attr name="files" value="1"/>
+      <newznab:attr name="author" value="Review by: Susan J. Wolfson"/>
+      <newznab:attr name="booktitle" value="Frankenstein / or / The Modern Prometheus: The Original Two—Volume Novel of 1816–1817 from the Bodleian Library Manuscriptsby Mary Wollstonecraft Shelley; Percy Bysshe Shelley; Charles E. Robinson"/>
+      <enclosure url="http://127.0.0.1:3000/api/nzb?sourcetype=libgenplus&amp;size=483605&amp;md5=87e4f647f765028cd8596b3406db649d&amp;filename=Review+by%3A+Susan+J.+Wolfson+-+Frankenstein+%2F+or+%2F+The+Modern+Prometheus%3A+The+Original+Two%E2%80%94Volume+Novel+of+1816%E2%80%931817+from+the+Bodleian+Library+Manuscriptsby+Mary+Wollstonecraft+Shelley%3B+Percy+Bysshe+Shelley%3B+Charles+E.+Robinson.pdf&amp;dlurl=https%3A%2F%2Flibgen.li%2Fads87e4f647f765028cd8596b3406db649d" length="483605" type="application/x-nzb"/>
+    </item>
+    <item>
+      <title>Review by: Doucet Devin Fischer - Mary Wollstonecraft Shelley: "Frankenstein, or the Modern Prometheus' (the 1818 Text)by Mary Wollstonecraft Shelley; James Rieger (1975, pdf)</title>
+      <description>Review by: Doucet Devin Fischer - Mary Wollstonecraft Shelley: "Frankenstein, or the Modern Prometheus' (the 1818 Text)by Mary Wollstonecraft Shelley; James Rieger (1975, pdf)</description>
+      <guid>be95fdff122ee25cf97c37d1d3a542db</guid>
+      <size>621241</size>
+      <category>7020</category>
+      <category>10720</category>
+      <pubDate>2021-07-17 20:18:28</pubDate>
+      <newznab:attr name="category" value="107020"/>
+      <newznab:attr name="category" value="7020"/>
+      <newznab:attr name="files" value="1"/>
+      <newznab:attr name="author" value="Review by: Doucet Devin Fischer"/>
+      <newznab:attr name="booktitle" value="Mary Wollstonecraft Shelley: &quot;Frankenstein, or the Modern Prometheus' (the 1818 Text)by Mary Wollstonecraft Shelley; James Rieger"/>
+      <enclosure url="http://127.0.0.1:3000/api/nzb?sourcetype=libgenplus&amp;size=621241&amp;md5=be95fdff122ee25cf97c37d1d3a542db&amp;filename=Review+by%3A+Doucet+Devin+Fischer+-+Mary+Wollstonecraft+Shelley%3A+%22Frankenstein%2C+or+the+Modern+Prometheus%27+%28the+1818+Text%29by+Mary+Wollstonecraft+Shelley%3B+James+Rieger.pdf&amp;dlurl=https%3A%2F%2Flibgen.li%2Fadsbe95fdff122ee25cf97c37d1d3a542db" length="621241" type="application/x-nzb"/>
+    </item>
+    <item>
+      <title>Wunsch, A. David - Frankenstein Returns (review of "Frankenstein Or, The Modern Prometheus by Mary Shelley. Annotated for Scientiest, Engineers, and Creators of All Kinds") [Book Reviews] (2018, pdf)</title>
+      <description>Wunsch, A. David - Frankenstein Returns (review of "Frankenstein Or, The Modern Prometheus by Mary Shelley. Annotated for Scientiest, Engineers, and Creators of All Kinds") [Book Reviews] (2018, pdf)</description>
+      <guid>3e900afdb3322ef5431beb28dd69ff0f</guid>
+      <size>7784</size>
+      <category>7020</category>
+      <category>10720</category>
+      <pubDate>2021-07-17 21:49:16</pubDate>
+      <newznab:attr name="category" value="107020"/>
+      <newznab:attr name="category" value="7020"/>
+      <newznab:attr name="files" value="1"/>
+      <newznab:attr name="author" value="Wunsch, A. David"/>
+      <newznab:attr name="booktitle" value="Frankenstein Returns (review of &quot;Frankenstein Or, The Modern Prometheus by Mary Shelley. Annotated for Scientiest, Engineers, and Creators of All Kinds&quot;) [Book Reviews]"/>
+      <enclosure url="http://127.0.0.1:3000/api/nzb?sourcetype=libgenplus&amp;size=7784&amp;md5=3e900afdb3322ef5431beb28dd69ff0f&amp;filename=Wunsch%2C+A.+David+-+Frankenstein+Returns+%28review+of+%22Frankenstein+Or%2C+The+Modern+Prometheus+by+Mary+Shelley.+Annotated+for+Scientiest%2C+Engineers%2C+and+Creators+of+All+Kinds%22%29+%5BBook+Reviews%5D.pdf&amp;dlurl=https%3A%2F%2Flibgen.li%2Fads3e900afdb3322ef5431beb28dd69ff0f" length="7784" type="application/x-nzb"/>
+    </item>
+    <item>
+      <title>Bowden, Martha F. - &lt;i&gt;Secresy; or, The Ruin on the Rock&lt;/i&gt;, and: &lt;i&gt;Frankenstein; or, The Modern Prometheus&lt;/i&gt; (review) (1995, pdf)</title>
+      <description>Bowden, Martha F. - &lt;i&gt;Secresy; or, The Ruin on the Rock&lt;/i&gt;, and: &lt;i&gt;Frankenstein; or, The Modern Prometheus&lt;/i&gt; (review) (1995, pdf)</description>
+      <guid>d35a72a37ca043590c5f58ab61bd000e</guid>
+      <size>353306</size>
+      <category>7020</category>
+      <category>10720</category>
+      <pubDate>2021-07-17 22:37:23</pubDate>
+      <newznab:attr name="category" value="107020"/>
+      <newznab:attr name="category" value="7020"/>
+      <newznab:attr name="files" value="1"/>
+      <newznab:attr name="author" value="Bowden, Martha F."/>
+      <newznab:attr name="booktitle" value="&lt;i>Secresy; or, The Ruin on the Rock&lt;/i>, and: &lt;i>Frankenstein; or, The Modern Prometheus&lt;/i> (review)"/>
+      <enclosure url="http://127.0.0.1:3000/api/nzb?sourcetype=libgenplus&amp;size=353306&amp;md5=d35a72a37ca043590c5f58ab61bd000e&amp;filename=Bowden%2C+Martha+F.+-+%3Ci%3ESecresy%3B+or%2C+The+Ruin+on+the+Rock%3C%2Fi%3E%2C+and%3A+%3Ci%3EFrankenstein%3B+or%2C+The+Modern+Prometheus%3C%2Fi%3E+%28review%29.pdf&amp;dlurl=https%3A%2F%2Flibgen.li%2Fadsd35a72a37ca043590c5f58ab61bd000e" length="353306" type="application/x-nzb"/>
+    </item>
+    <item>
+      <title>Zuk, Rhoda J. - Secresy; or, The Ruin on the Rock ed. by Isobel Grundy, and: Frankenstein; or, the Modern Prometheus ed. by D.L. Macdonald and Kathleen Scherf, and: Love in Excess; or, the Fatal Enquiry ed. by David Oakleaf, and: The Victim of Prejudice ed. by Eleanor Ty (1996, pdf)</title>
+      <description>Zuk, Rhoda J. - Secresy; or, The Ruin on the Rock ed. by Isobel Grundy, and: Frankenstein; or, the Modern Prometheus ed. by D.L. Macdonald and Kathleen Scherf, and: Love in Excess; or, the Fatal Enquiry ed. by David Oakleaf, and: The Victim of Prejudice ed. by Eleanor Ty (1996, pdf)</description>
+      <guid>e53c5eb584e64a6b4e681e23da8de0f0</guid>
+      <size>337016</size>
+      <category>7020</category>
+      <category>10720</category>
+      <pubDate>2021-07-17 22:37:23</pubDate>
+      <newznab:attr name="category" value="107020"/>
+      <newznab:attr name="category" value="7020"/>
+      <newznab:attr name="files" value="1"/>
+      <newznab:attr name="author" value="Zuk, Rhoda J."/>
+      <newznab:attr name="booktitle" value="Secresy; or, The Ruin on the Rock ed. by Isobel Grundy, and: Frankenstein; or, the Modern Prometheus ed. by D.L. Macdonald and Kathleen Scherf, and: Love in Excess; or, the Fatal Enquiry ed. by David Oakleaf, and: The Victim of Prejudice ed. by Eleanor Ty"/>
+      <enclosure url="http://127.0.0.1:3000/api/nzb?sourcetype=libgenplus&amp;size=337016&amp;md5=e53c5eb584e64a6b4e681e23da8de0f0&amp;filename=Zuk%2C+Rhoda+J.+-+Secresy%3B+or%2C+The+Ruin+on+the+Rock+ed.+by+Isobel+Grundy%2C+and%3A+Frankenstein%3B+or%2C+the+Modern+Prometheus+ed.+by+D.L.+Macdonald+and+Kathleen+Scherf%2C+and%3A+Love+in+Excess%3B+or%2C+the+Fatal+Enquiry+ed.+by+David+Oakleaf%2C+and%3A+The+Victim+of+Prejudice+ed.+by+Eleanor+Ty.pdf&amp;dlurl=https%3A%2F%2Flibgen.li%2Fadse53c5eb584e64a6b4e681e23da8de0f0" length="337016" type="application/x-nzb"/>
+    </item>
+    <item>
+      <title>Cambra-Badii, Irene; Guardiola, Elena; BaÃ±os, Josep-E. - The Ethical Interest of Frankenstein; Or, the Modern Prometheus: A Literature Review 200 Years After Its Publication (2020, pdf)</title>
+      <description>Cambra-Badii, Irene; Guardiola, Elena; BaÃ±os, Josep-E. - The Ethical Interest of Frankenstein; Or, the Modern Prometheus: A Literature Review 200 Years After Its Publication (2020, pdf)</description>
+      <guid>3d85d5c5d8952c355fa44451a247310b</guid>
+      <size>1679436</size>
+      <category>7020</category>
+      <category>10720</category>
+      <pubDate>2021-07-17 22:56:05</pubDate>
+      <newznab:attr name="category" value="107020"/>
+      <newznab:attr name="category" value="7020"/>
+      <newznab:attr name="files" value="1"/>
+      <newznab:attr name="author" value="Cambra-Badii, Irene; Guardiola, Elena; BaÃ±os, Josep-E."/>
+      <newznab:attr name="booktitle" value="The Ethical Interest of Frankenstein; Or, the Modern Prometheus: A Literature Review 200 Years After Its Publication"/>
+      <enclosure url="http://127.0.0.1:3000/api/nzb?sourcetype=libgenplus&amp;size=1679436&amp;md5=3d85d5c5d8952c355fa44451a247310b&amp;filename=Cambra-Badii%2C+Irene%3B+Guardiola%2C+Elena%3B+Ba%C3%83%C2%B1os%2C+Josep-E.+-+The+Ethical+Interest+of+Frankenstein%3B+Or%2C+the+Modern+Prometheus%3A+A+Literature+Review+200+Years+After+Its+Publication.pdf&amp;dlurl=https%3A%2F%2Flibgen.li%2Fads3d85d5c5d8952c355fa44451a247310b" length="1679436" type="application/x-nzb"/>
+    </item>
+    <item>
+      <title>Mike Bezemek - #Frankenstein; Or, the Modern Prometheus: A Literary Classic Told in Tweets for the 21st Century Audience (2018, epub, eng, ipfs)</title>
+      <description>Mike Bezemek - #Frankenstein; Or, the Modern Prometheus: A Literary Classic Told in Tweets for the 21st Century Audience (2018, epub, eng, ipfs)</description>
+      <guid>bafykbzacebu26a7gze6yw57jeywpx4hyodcvi3hkwlms2ykrnegkymyuxjaai</guid>
+      <size>902300</size>
+      <category>7020</category>
+      <category>10720</category>
+      <pubDate>2023-01-27 21:03:59</pubDate>
+      <newznab:attr name="category" value="107020"/>
+      <newznab:attr name="category" value="7020"/>
+      <newznab:attr name="files" value="1"/>
+      <newznab:attr name="author" value="Mike Bezemek"/>
+      <newznab:attr name="booktitle" value="#Frankenstein; Or, the Modern Prometheus: A Literary Classic Told in Tweets for the 21st Century Audience"/>
+      <enclosure url="http://127.0.0.1:3000/api/nzb?sourcetype=libgenplus&amp;size=902300&amp;md5=31920af782ba556e5c24e41108a5d94c&amp;filename=Mike+Bezemek+-+%23Frankenstein%3B+Or%2C+the+Modern+Prometheus%3A+A+Literary+Classic+Told+in+Tweets+for+the+21st+Century+Audience.epub&amp;dlurl=https%3A%2F%2Fgateway.ipfs.io%2Fipfs%2Fbafykbzacebu26a7gze6yw57jeywpx4hyodcvi3hkwlms2ykrnegkymyuxjaai&amp;ipfs=bafykbzacebu26a7gze6yw57jeywpx4hyodcvi3hkwlms2ykrnegkymyuxjaai" length="902300" type="application/x-nzb"/>
+    </item>
+    <item>
+      <title>Mike Bezemek - #Frankenstein; Or, the Modern Prometheus: A Literary Classic Told in Tweets for the 21st Century Audience (2018, epub, eng)</title>
+      <description>Mike Bezemek - #Frankenstein; Or, the Modern Prometheus: A Literary Classic Told in Tweets for the 21st Century Audience (2018, epub, eng)</description>
+      <guid>31920af782ba556e5c24e41108a5d94c</guid>
+      <size>902300</size>
+      <category>7020</category>
+      <category>10720</category>
+      <pubDate>2023-01-27 21:03:59</pubDate>
+      <newznab:attr name="category" value="107020"/>
+      <newznab:attr name="category" value="7020"/>
+      <newznab:attr name="files" value="1"/>
+      <newznab:attr name="author" value="Mike Bezemek"/>
+      <newznab:attr name="booktitle" value="#Frankenstein; Or, the Modern Prometheus: A Literary Classic Told in Tweets for the 21st Century Audience"/>
+      <enclosure url="http://127.0.0.1:3000/api/nzb?sourcetype=libgenplus&amp;size=902300&amp;md5=31920af782ba556e5c24e41108a5d94c&amp;filename=Mike+Bezemek+-+%23Frankenstein%3B+Or%2C+the+Modern+Prometheus%3A+A+Literary+Classic+Told+in+Tweets+for+the+21st+Century+Audience.epub&amp;dlurl=https%3A%2F%2Flibgen.li%2Fads31920af782ba556e5c24e41108a5d94c" length="902300" type="application/x-nzb"/>
+    </item>
+    <item>
+      <title>Mary Shelley - Frankenstein: Or the Modern Prometheus - the 1818 Text (2012, azw3, eng)</title>
+      <description>Mary Shelley - Frankenstein: Or the Modern Prometheus - the 1818 Text (2012, azw3, eng)</description>
+      <guid>b981402866f48af711039a8e7931686d</guid>
+      <size>586682</size>
+      <category>7020</category>
+      <category>10720</category>
+      <pubDate>2023-07-12 05:07:05</pubDate>
+      <newznab:attr name="category" value="107020"/>
+      <newznab:attr name="category" value="7020"/>
+      <newznab:attr name="files" value="1"/>
+      <newznab:attr name="author" value="Mary Shelley"/>
+      <newznab:attr name="booktitle" value="Frankenstein: Or the Modern Prometheus - the 1818 Text"/>
+      <enclosure url="http://127.0.0.1:3000/api/nzb?sourcetype=libgenplus&amp;size=586682&amp;md5=b981402866f48af711039a8e7931686d&amp;filename=Mary+Shelley+-+Frankenstein%3A+Or+the+Modern+Prometheus+-+the+1818+Text.azw3&amp;dlurl=https%3A%2F%2Flibgen.li%2Fadsb981402866f48af711039a8e7931686d" length="586682" type="application/x-nzb"/>
+    </item>
+    <item>
+      <title>Shelley, Mary - Frankenstein: Or the Modern Prometheus - the 1818 Text (2012, epub, eng)</title>
+      <description>Shelley, Mary - Frankenstein: Or the Modern Prometheus - the 1818 Text (2012, epub, eng)</description>
+      <guid>c7223c2fe7726e490cb9e6fc3464577e</guid>
+      <size>473338</size>
+      <category>7020</category>
+      <category>10720</category>
+      <pubDate>2023-07-12 05:07:05</pubDate>
+      <newznab:attr name="category" value="107020"/>
+      <newznab:attr name="category" value="7020"/>
+      <newznab:attr name="files" value="1"/>
+      <newznab:attr name="author" value="Shelley, Mary"/>
+      <newznab:attr name="booktitle" value="Frankenstein: Or the Modern Prometheus - the 1818 Text"/>
+      <enclosure url="http://127.0.0.1:3000/api/nzb?sourcetype=libgenplus&amp;size=473338&amp;md5=c7223c2fe7726e490cb9e6fc3464577e&amp;filename=Shelley%2C+Mary+-+Frankenstein%3A+Or+the+Modern+Prometheus+-+the+1818+Text.epub&amp;dlurl=https%3A%2F%2Flibgen.li%2Fadsc7223c2fe7726e490cb9e6fc3464577e" length="473338" type="application/x-nzb"/>
+    </item>
+    <item>
+      <title>Mary Shelley - Frankenstein: Or the Modern Prometheus - the 1818 Text (2012, fb2, eng)</title>
+      <description>Mary Shelley - Frankenstein: Or the Modern Prometheus - the 1818 Text (2012, fb2, eng)</description>
+      <guid>83cffe4942d262d7231e9fe5e5197c03</guid>
+      <size>793580</size>
+      <category>7020</category>
+      <category>10720</category>
+      <pubDate>2023-07-12 05:07:05</pubDate>
+      <newznab:attr name="category" value="107020"/>
+      <newznab:attr name="category" value="7020"/>
+      <newznab:attr name="files" value="1"/>
+      <newznab:attr name="author" value="Mary Shelley"/>
+      <newznab:attr name="booktitle" value="Frankenstein: Or the Modern Prometheus - the 1818 Text"/>
+      <enclosure url="http://127.0.0.1:3000/api/nzb?sourcetype=libgenplus&amp;size=793580&amp;md5=83cffe4942d262d7231e9fe5e5197c03&amp;filename=Mary+Shelley+-+Frankenstein%3A+Or+the+Modern+Prometheus+-+the+1818+Text.fb2&amp;dlurl=https%3A%2F%2Flibgen.li%2Fads83cffe4942d262d7231e9fe5e5197c03" length="793580" type="application/x-nzb"/>
+    </item>
+    <item>
+      <title>Shelley, Mary - Frankenstein: Or the Modern Prometheus - the 1818 Text (2012, lit, eng)</title>
+      <description>Shelley, Mary - Frankenstein: Or the Modern Prometheus - the 1818 Text (2012, lit, eng)</description>
+      <guid>a590a2f7fb47b1e8c18f50ae126e607c</guid>
+      <size>448718</size>
+      <category>7020</category>
+      <category>10720</category>
+      <pubDate>2023-07-12 05:07:05</pubDate>
+      <newznab:attr name="category" value="107020"/>
+      <newznab:attr name="category" value="7020"/>
+      <newznab:attr name="files" value="1"/>
+      <newznab:attr name="author" value="Shelley, Mary"/>
+      <newznab:attr name="booktitle" value="Frankenstein: Or the Modern Prometheus - the 1818 Text"/>
+      <enclosure url="http://127.0.0.1:3000/api/nzb?sourcetype=libgenplus&amp;size=448718&amp;md5=a590a2f7fb47b1e8c18f50ae126e607c&amp;filename=Shelley%2C+Mary+-+Frankenstein%3A+Or+the+Modern+Prometheus+-+the+1818+Text.lit&amp;dlurl=https%3A%2F%2Flibgen.li%2Fadsa590a2f7fb47b1e8c18f50ae126e607c" length="448718" type="application/x-nzb"/>
+    </item>
+    <item>
+      <title>Shelley, Mary - Frankenstein: Or the Modern Prometheus - the 1818 Text (lrf, eng)</title>
+      <description>Shelley, Mary - Frankenstein: Or the Modern Prometheus - the 1818 Text (lrf, eng)</description>
+      <guid>1b502f768cf0b37657b5c41bed809c87</guid>
+      <size>331890</size>
+      <category>7020</category>
+      <category>10720</category>
+      <pubDate>2023-07-12 05:07:05</pubDate>
+      <newznab:attr name="category" value="107020"/>
+      <newznab:attr name="category" value="7020"/>
+      <newznab:attr name="files" value="1"/>
+      <newznab:attr name="author" value="Shelley, Mary"/>
+      <newznab:attr name="booktitle" value="Frankenstein: Or the Modern Prometheus - the 1818 Text"/>
+      <enclosure url="http://127.0.0.1:3000/api/nzb?sourcetype=libgenplus&amp;size=331890&amp;md5=1b502f768cf0b37657b5c41bed809c87&amp;filename=Shelley%2C+Mary+-+Frankenstein%3A+Or+the+Modern+Prometheus+-+the+1818+Text.lrf&amp;dlurl=https%3A%2F%2Flibgen.li%2Fads1b502f768cf0b37657b5c41bed809c87" length="331890" type="application/x-nzb"/>
+    </item>
+    <item>
+      <title>Mary Shelley - Frankenstein: Or the Modern Prometheus - the 1818 Text (2012, mobi, eng)</title>
+      <description>Mary Shelley - Frankenstein: Or the Modern Prometheus - the 1818 Text (2012, mobi, eng)</description>
+      <guid>5ec83d8a00d472f0c38e3ced42b59500</guid>
+      <size>566828</size>
+      <category>7020</category>
+      <category>10720</category>
+      <pubDate>2023-07-12 05:07:05</pubDate>
+      <newznab:attr name="category" value="107020"/>
+      <newznab:attr name="category" value="7020"/>
+      <newznab:attr name="files" value="1"/>
+      <newznab:attr name="author" value="Mary Shelley"/>
+      <newznab:attr name="booktitle" value="Frankenstein: Or the Modern Prometheus - the 1818 Text"/>
+      <enclosure url="http://127.0.0.1:3000/api/nzb?sourcetype=libgenplus&amp;size=566828&amp;md5=5ec83d8a00d472f0c38e3ced42b59500&amp;filename=Mary+Shelley+-+Frankenstein%3A+Or+the+Modern+Prometheus+-+the+1818+Text.mobi&amp;dlurl=https%3A%2F%2Flibgen.li%2Fads5ec83d8a00d472f0c38e3ced42b59500" length="566828" type="application/x-nzb"/>
+    </item>
+  </channel>
+</rss>"
+`;

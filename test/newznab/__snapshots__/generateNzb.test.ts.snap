@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`nzb generation generates valid nzb 1`] = `
+"<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE nzb PUBLIC "-//newzBin//DTD NZB 1.1//EN" "http://www.newzbin.com/DTD/nzb/nzb-1.1.dtd">
+<nzb xmlns="http://www.newzbin.com/DTD/2003/nzb">
+  <head>
+    <meta type="category">Books &gt; Ebooks</meta>
+    <meta type="name">test</meta>
+    <meta type="x-lib-nimic:dlurl">https://test.com/test.epub</meta>
+    <meta type="x-lib-nimic:md5">abcdef</meta>
+    <meta type="x-lib-nimic:filename">test.epub</meta>
+    <meta type="x-lib-nimic:size">3073</meta>
+    <meta type="x-lib-nimic:sourcetype">libgen</meta>
+  </head>
+  <file subject="test.epub">
+    <groups>
+      <group>alt.binaries.e-book</group>
+    </groups>
+    <segments>
+      <segment bytes="3073" number="1">1@lib-nimic</segment>
+    </segments>
+  </file>
+</nzb>"
+`;

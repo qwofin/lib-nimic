@@ -1,0 +1,8 @@
+node_modules
+dist
+coverage
+Dockerfile
+.envrc
+.direnv
+.tool-versions
+downloads
