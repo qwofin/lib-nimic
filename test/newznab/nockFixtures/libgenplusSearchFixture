@@ -1,6 +1,6 @@
 [
     {
-        "scope": "https://libgen.li:443",
+        "scope": "https://fakelibgenplus:443",
         "method": "GET",
         "path": "/index.php?req=Frankenstein%20Or%20The%20Modern%20Prometheus&objects[]=f",
         "body": "",
@@ -57,7 +57,7 @@
         "responseIsBinary": true
     },
     {
-        "scope": "https://libgen.li:443",
+        "scope": "https://fakelibgenplus:443",
         "method": "GET",
         "path": "/json.php?object=f&fields=md5,filesize,extension,editions&addkeys=877&ids=1120599,1120600,1120601,6454492,30122988,80521583,85856191,85855994,4476697,4569132,5299273,6454488,6454515,6454516,55061636,70081173,87985814,98442135,100752826,100752827,100752828,100752829,100752830,100752831,2596444",
         "body": "",
@@ -92,7 +92,7 @@
         "responseIsBinary": true
     },
     {
-        "scope": "https://libgen.li:443",
+        "scope": "https://fakelibgenplus:443",
         "method": "GET",
         "path": "/json.php?object=e&addkeys=101,401,630&fields=title,author,year,language,time_added,extension,publisher,series,edition&ids=142451503,142451504,142451502,3039442,4190275,4283681,5026973,6205692,6205696,6205719,6205720,30038140,55135874,70392634,80902262,86343643,86343840,88564412,142898064,144503478,144503479,144503480,144503481,144503482,144503483",
         "body": "",

@@ -1,6 +1,6 @@
 [
     {
-        "scope": "https://libgen.rs:443",
+        "scope": "https://fakelibgen:443",
         "method": "GET",
         "path": "/search.php?req=Frankenstein%20Or%20The%20Modern%20Prometheus",
         "body": "",
@@ -27,7 +27,7 @@
         "responseIsBinary": true
     },
     {
-        "scope": "https://libgen.rs:443",
+        "scope": "https://fakelibgen:443",
         "method": "GET",
         "path": "/json.php?fields=id,title,author,year,edition,language,md5,timeadded,extension,publisher,filesize,series,ipfs_cid&ids=3347261,3362908",
         "body": "",
@@ -81,7 +81,7 @@
         "responseIsBinary": false
     },
     {
-        "scope": "https://libgen.rs:443",
+        "scope": "https://fakelibgen:443",
         "method": "GET",
         "path": "/search.php?req=Frankenstein%20Or%20The%20Modern%20Prometheus",
         "body": "",
@@ -108,7 +108,7 @@
         "responseIsBinary": true
     },
     {
-        "scope": "https://libgen.rs:443",
+        "scope": "https://fakelibgen:443",
         "method": "GET",
         "path": "/json.php?fields=id,title,author,year,edition,language,md5,timeadded,extension,publisher,filesize,series,ipfs_cid&ids=3347261,3362908",
         "body": "",
@@ -162,7 +162,7 @@
         "responseIsBinary": false
     },
     {
-        "scope": "https://libgen.rs:443",
+        "scope": "https://fakelibgen:443",
         "method": "GET",
         "path": "/search.php?req=Frankenstein%20Or%20The%20Modern%20Prometheus",
         "body": "",
@@ -189,7 +189,7 @@
         "responseIsBinary": true
     },
     {
-        "scope": "https://libgen.rs:443",
+        "scope": "https://fakelibgen:443",
         "method": "GET",
         "path": "/json.php?fields=id,title,author,year,edition,language,md5,timeadded,extension,publisher,filesize,series,ipfs_cid&ids=3347261,3362908",
         "body": "",
@@ -243,7 +243,7 @@
         "responseIsBinary": false
     },
     {
-        "scope": "https://libgen.rs:443",
+        "scope": "https://fakelibgen:443",
         "method": "GET",
         "path": "/search.php?req=Frankenstein%20Or%20The%20Modern%20Prometheus",
         "body": "",
@@ -270,7 +270,7 @@
         "responseIsBinary": true
     },
     {
-        "scope": "https://libgen.rs:443",
+        "scope": "https://fakelibgen:443",
         "method": "GET",
         "path": "/json.php?fields=id,title,author,year,edition,language,md5,timeadded,extension,publisher,filesize,series,ipfs_cid&ids=3347261,3362908",
         "body": "",
