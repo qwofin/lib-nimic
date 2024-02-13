@@ -1,13 +1,10 @@
 import Koa from 'koa'
-// import logger from 'koa-pino-logger'
 import { pinoHttp } from 'pino-http'
 import { router } from './api/routes.js'
 import { config } from './config.js'
 const app = new Koa()
 const logger = config.logger.child({ module: 'api' })
 const logWrapper = pinoHttp({ logger })
-// const apiLogger = logger(config.pinoOptions)
-// apiLogger.logger.setBindings({ module: 'api' })
 
 app.use(async (ctx, next) => {
   try {
