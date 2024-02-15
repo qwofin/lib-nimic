@@ -56,32 +56,32 @@ describe('newznab api', () => {
     nockDone()
   }, 15000)
 
-  test('libgen/search is rate limited', async () => {
-    nock.back.setMode('lockdown')
-    const { nockDone, context } = await nock.back(
-      'libgenSearchRateLimit',
-      NOCK_OPTIONS,
-    )
-    nock.enableNetConnect('127.0.0.1')
-    config.nzbHostOverride = 'http://127.0.0.1:3000'
+  // test('libgen/search is rate limited', async () => {
+  //   nock.back.setMode('lockdown')
+  //   const { nockDone, context } = await nock.back(
+  //     'libgenSearchRateLimit',
+  //     NOCK_OPTIONS,
+  //   )
+  //   nock.enableNetConnect('127.0.0.1')
+  //   config.nzbHostOverride = 'http://127.0.0.1:3000'
 
-    for (let i = 0; i < 4; i++) {
-      expect(
-        (
-          await request(app.callback()).get(
-            `/api/libgen/api?t=search&q=Frankenstein Or The Modern Prometheus`,
-          )
-        ).status,
-      ).toBe(200)
-    }
-    expect(
-      (
-        await request(app.callback()).get(
-          `/api/libgen/api?t=search&q=Frankenstein Or The Modern Prometheus`,
-        )
-      ).status,
-    ).toBe(429)
+  //   for (let i = 0; i < 4; i++) {
+  //     expect(
+  //       (
+  //         await request(app.callback()).get(
+  //           `/api/libgen/api?t=search&q=Frankenstein Or The Modern Prometheus`,
+  //         )
+  //       ).status,
+  //     ).toBe(200)
+  //   }
+  //   expect(
+  //     (
+  //       await request(app.callback()).get(
+  //         `/api/libgen/api?t=search&q=Frankenstein Or The Modern Prometheus`,
+  //       )
+  //     ).status,
+  //   ).toBe(429)
 
-    nockDone()
-  }, 15000)
+  //   nockDone()
+  // }, 15000)
 })

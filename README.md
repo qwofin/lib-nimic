@@ -87,7 +87,7 @@ To troubleshoot most things:
 
 Searching libgen or libgenplus is obviously not intended to be done automatically (or at leats neither has direct support for it). They both have a JSON api but it is different between the 2. On Libgen, the api does not cover anything past the "libgen" library (e.g. fiction, science etc), as such on libgen does libraries are _not_ searchable with lib-nimic. It's technically possible to do, but it'd result in a lot of requests to libgen which would be akin to spamming them(a single search would yield up to ~26 requests to libgen, whereas with the api it yields 2). Luckily on LibgenPlus the search and api cover all the libraries, so they all work there. Neither API supports searching the same way as their html pages do, so searches still happen through html, then parsing the form for the IDs needed to be able to use the api - it uses the API afterwards.
 
-> Searches are rate limited to 4 searches/30seconds, this is hard-coded to protect libgen _just in case_ this application ends up being used. Readarr sends 2-3 searches for each book simultaneously, so this ends up yielding ~2 readarr book search per 30 seconds. Readarr will flicker warnings about indexers being unavailable due to errors when this happens, however the errors go away as soon as it can use them again (in 30s).
+> Searches are rate limited to 40 searches/300seconds, this is hard-coded to protect libgen _just in case_ this application ends up being used. Readarr sends 2-3 searches for each book simultaneously, so this ends up yielding ~20 readarr book search per 5 minutes. Readarr will flicker warnings about indexers being unavailable due to errors when this happens, however the errors go away as soon as it can use them again (in 30s).
 
 
 ## Contributions

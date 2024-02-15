@@ -19,8 +19,8 @@ class Config {
 
   constructor() {
     this.rateLimit = {
-      rate: 4,
-      timeframe: 30,
+      rate: 40,
+      timeframe: 300,
     }
 
     this.downloadDir = process.env.DOWNLOAD_DIR
