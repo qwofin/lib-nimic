@@ -12,7 +12,8 @@ FROM node:21.5-alpine as release
 RUN apk --no-cache add shadow \
 && deluser --remove-home node \
 && groupmod --gid 65532 users \
-&& apk del shadow
+&& addgroup -S abc -g 100 \
+&& adduser -S -H -s /bin/sh -G abc -u 99 abc
 WORKDIR /app
 COPY docker-entrypoint.sh /usr/local/bin
 COPY --from=builder /app/package.json .
