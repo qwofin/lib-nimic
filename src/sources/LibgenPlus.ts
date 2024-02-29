@@ -43,8 +43,20 @@ interface LibgenPlusFileLookupResult {
   }
 }
 
+function splitToChunks<T>(array: T[], limit: number): T[][] {
+  const chunks = []
+
+  for (let i = 0; i < array.length; i += limit) {
+    const chunk = array.slice(i, i + limit)
+    chunks.push(chunk)
+  }
+
+  return chunks
+}
+
 export class LibgenPlusSource extends IPFSCapablseSource {
   mirrorHost: string
+  protected rssCache: SearchResult[] = []
   constructor(
     dlManager: DownloadManager,
     mirrorHost: string,
@@ -96,13 +108,17 @@ export class LibgenPlusSource extends IPFSCapablseSource {
     if (!editionIds.length) {
       return []
     }
-    const editionResponse: { [e_id: string]: LibgenPlusLookupResult } = (
-      await axios.get(
+    const chunkedIds = splitToChunks(editionIds, 150)
+    const editionResponse: { [e_id: string]: LibgenPlusLookupResult } = {}
+
+    for (const chunk of chunkedIds) {
+      const response = await axios.get(
         `${
           this.mirrorHost
-        }/json.php?${this.editionQueryFields}&ids=${editionIds.join(',')}`,
+        }/json.php?${this.editionQueryFields}&ids=${chunk.join(',')}`,
       )
-    ).data
+      Object.assign(editionResponse, response.data)
+    }
 
     this.logger.debug(
       `Looked up ${Object.keys(editionResponse).length} editions`,
@@ -175,11 +191,15 @@ export class LibgenPlusSource extends IPFSCapablseSource {
       .toArray()
       .map(elem => {
         const row = cheerio.load(elem)
-        const link = row('td:nth-child(7) a:first').attr('href').trim()
+        const link = row('td:nth-child(7) a:first').attr('href')
+        if (!link) {
+          return null
+        }
         try {
-          return link.match(/id=(\d+)/)[1]
+          return link.trim().match(/id=(\d+)/)[1]
         } catch {
           this.logger.warn(`Failed to parse ID from ${link}, skipping`)
+          return null
         }
       })
       .filter(Boolean)
@@ -195,10 +215,10 @@ export class LibgenPlusSource extends IPFSCapablseSource {
     return this.expandLookup(fileResponse.data)
   }
 
-  protected async _rss(start: Date = null, depth = 0): Promise<SearchResult[]> {
+  protected async _rss(start: Date = null): Promise<SearchResult[]> {
     if (!start) {
       start = new Date()
-      start.setDate(start.getDate() - 1)
+      start.setMinutes(start.getMinutes() - 20)
     }
     // expects YYYY-MM-DD hh:mm:ss
     const timeStartString = start.toISOString().replace('T', ' ').slice(0, 19)
@@ -208,15 +228,14 @@ export class LibgenPlusSource extends IPFSCapablseSource {
     )
     const data: { [id: string]: LibgenPlusFileLookupResult } = fileResponse.data
     if (!Object.keys(data).length) {
-      start.setDate(start.getDate() - 1)
-      if (depth >= this.maxDepth) {
-        return []
-      }
-      return this._rss(start, depth + 1)
+      this.logger.info("RSS didn't return anything new, returning cache")
+      return this.rssCache
     }
     this.logger.debug(`RSS returned ${Object.keys(data).length} results`)
 
-    return this.expandLookup(data)
+    const results = await this.expandLookup(data)
+    this.rssCache = results
+    return results
   }
 
   async download(url: string, filename: string, md5: string) {

@@ -36,19 +36,11 @@ jobs:
         env:
           DOWNLOAD_DIR: /tmp
           COMPLETED_DIR: /tmp
-          LIBGEN_MIRROR: https://fakelibgen
-          LIBGEN_MIRROR_FILEHOST: http://fakelibgen.files
-          LIBGENPLUS_MIRROR: https://fakelibgenplus
-          IPFS_GW: https://gateway.ipfs.io
         run: |
           docker run --rm \
           -e DOWNLOAD_DIR \
           -e COMPLETED_DIR \
-          -e LIBGEN_MIRROR \
-          -e LIBGEN_MIRROR_FILEHOST \
-          -e LIBGENPLUS_MIRROR \
-          -e IPFS_GW \
-          ${{ env.TEST_TAG }} npm run test
+          ${{ env.TEST_TAG }} npm run test:faked
       - if: ${{ github.ref == 'refs/heads/main' }}
         name: Build and push Docker image
         uses: docker/build-push-action@v5
