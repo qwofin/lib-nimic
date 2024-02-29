@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "npx jest",
-    "test:faked": "LIBGEN_MIRROR=\"https://fakelibgen\" LIBGEN_MIRROR_FILEHOST=\"http://fakelibgen.files\" LIBGENPLUS_MIRROR=\"https://fakelibgenplus\" npx jest",
+    "test:faked": "LIBGEN_MIRROR=\"https://fakelibgen\" LIBGEN_MIRROR_FILEHOST=\"http://fakelibgen.files\" LIBGENPLUS_MIRROR=\"https://fakelibgenplus\" IPFS_GW=\"https://gateway.ipfs.io\" npx jest",
     "start": "node dist/index.js",
     "build": "npx tsc",
     "dev": "LOG_LEVEL=debug LOG_FORMAT=pretty tsx --watch src/index.ts",
