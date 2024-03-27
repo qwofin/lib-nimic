@@ -82,7 +82,12 @@ export class LibgenPlusSource extends IPFSCapablseSource {
   protected async getActualDlUrl(dlurl: string): Promise<string> {
     const response = await axios.get(dlurl)
     const dom = cheerio.load(response.data)
-    return dom('a:contains(GET)').attr('href').replace('\\', '/')
+    const url = dom('a:contains(GET)').attr('href').replace('\\', '/')
+    if (!url.startsWith("http")) {
+      return `${this.mirrorHost}/${url}`
+    }
+
+    return url
   }
 
   protected async expandLookup(files: {
